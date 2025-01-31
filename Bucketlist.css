@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+/* Icons for Completed and Uncompleted tasks */
+li .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+li.completed {
+    color: #28a745;
+    font-weight: bold;
+}
+
+li.completed .icon {
+    color: #28a745;
+}
+
+/* Hover effect for list items */
+li:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        width: 90%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+}
